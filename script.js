@@ -8,7 +8,7 @@ async function validateNumber() {
   }
  
   const apiKey = "11bc30990c6b81f0b60d613acbf50cca";
-  const url = `http://apilayer.net/api/validate?access_key=${apiKey}&number=${number}`;
+  const url = `https://apilayer.net/api/validate?access_key=${apiKey}&number=${number}`;
  
   try {
     const response = await fetch(url);
