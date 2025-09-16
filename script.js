@@ -1,6 +1,6 @@
 async function validarNumero() {
   const numero = document.getElementById("numero").value;
-  const access_key = "SUA_ACCESS_KEY_AQUI"; // Substitua pela sua chave da Apilayer
+  const access_key = "11bc30990c6b81f0b60d613acbf50cca"; // Substitua pela sua chave da Apilayer
 
   const url = `http://apilayer.net/api/validate?access_key=${access_key}&number=${numero}`;
 
