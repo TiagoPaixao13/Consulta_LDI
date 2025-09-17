@@ -39,4 +39,4 @@ async function validateNumber() {
     console.error("Erro:", error);
   }
 }
- 
+
