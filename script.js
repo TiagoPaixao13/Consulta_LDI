@@ -30,9 +30,15 @@ async function validateNumber() {
  
     resultDiv.innerHTML = `
       <p><strong>Válido:</strong> ${data.valid ? "Sim ✅" : "Não ❌"}</p>
+      <p><strong>Número:</strong> ${data.number || "-"}</p>
+      <p><strong>Formato Local:</strong> ${data.local_format || "-"}</p>
+      <p><strong>Formato Internacional:</strong> ${data.international_format || "-"}</p>
       <p><strong>Prefixo:</strong> ${data.country_prefix || "-"}</p>
       <p><strong>Código do País:</strong> ${data.country_code || "-"}</p>
       <p><strong>Nome do País:</strong> ${data.country_name || "-"}</p>
+      <p><strong>Localização:</strong> ${data.location || "-"}</p>
+      <p><strong>Operadora:</strong> ${data.carrier || "Não disponível"}</p>
+      <p><strong>Tipo de Linha:</strong> ${data.line_type === "landline" ? "Fixa ☎️" : data.line_type === "mobile" ? "Móvel 📱" : "-"}</p>
     `;
   } catch (error) {
     resultDiv.innerHTML = `<p style="color:red">Erro na requisição.</p>`;
